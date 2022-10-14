@@ -1,0 +1,21 @@
+<div>
+    <div class="cont-cali">
+        <h2>Calificaciones finales</h2>
+        <ul class="list-cali">
+            <div *ngFor="let alumno of listaAlumnos">
+            <li [ngClass]="alumno.promedio >= 70 ? 'txt-aprobado' : 'txt-reprobado'">
+                {{ alumno.apePaterno | uppercase}}  {{ alumno.apeMaterno | uppercase}} {{ alumno.nombre | uppercase}} 
+                <br>
+                Promedio: {{ alumno.promedio }}
+                <br>
+                <span *ngIf="alumno.promedio >= 70" >
+                    Aprobado
+                </span>
+                <span *ngIf="alumno.promedio <= 69" >
+                    Reprobado
+                </span>
+            </li>
+            </div>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+.cont-navbar {
+    width: 100% !important;
+    text-align: center !important;
+}
+#navbarSupportedContent {
+    width: 100% !important;
+}
+#navbarSupportedContent a{
+    width: 100% !important;
+}
+@media (max-width: 575px) {
+    #navbarSupportedContent .form-inline {
+        justify-content: center !important;
+    }
+}
+@media (min-width: 991px) {
+    .navbar-nav{
+        padding-left: 50px !important;
+    }
+}

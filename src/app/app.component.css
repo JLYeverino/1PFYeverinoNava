@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+#content {
+    width: 100% !important;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+#cont-sidebar {
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+.cont-body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+#sidebar{
+    background-color: #343a40;
+}

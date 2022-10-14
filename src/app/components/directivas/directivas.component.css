@@ -1,0 +1,25 @@
+.txt-reprobado{
+    color: rgb(211, 0, 0);
+    margin-bottom: 10px;
+}
+
+.grande{
+    font-size: 20px;
+}
+
+.txt-aprobado{
+    color:rgb(10, 54, 0);
+    margin-bottom: 10px;
+}
+
+.cont-cali {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.list-cali {
+    list-style: none !important;
+    padding: 0 !important;
+    font-size: 20px;
+}

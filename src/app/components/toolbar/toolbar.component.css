@@ -1,0 +1,23 @@
+.bd-toc-link {
+    display: block;
+    padding: 0.25rem 1.5rem;
+    font-weight: 600;
+    color: rgba(255,255,255,.5) !important;
+}
+.bd-toc-link:hover {
+    cursor:  pointer !important;
+    color: #fff !important;
+}
+.bd-toc-link.active {
+    color: #fff !important;
+}
+@media (max-width: 768px) {
+    #cont-links{
+        display: block !important;
+    }
+    .bd-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
