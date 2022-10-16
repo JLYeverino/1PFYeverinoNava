@@ -6,6 +6,6 @@ import {ListaPersonas, Persona} from '../components/abm-tabla/personas'
 export class NombreCompletoPipe implements PipeTransform {
 
   transform(value: Persona, ...args: string[]): string {
-    return value.nombre + ' ' + value.edad;
+    return value.nombre + ' ' + value.apellido;
   }
 }

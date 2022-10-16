@@ -1,12 +1,8 @@
 
 <mat-table [dataSource]="ELEMENT_DATA">
   <ng-container matColumnDef="nombre" >
-      <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
-      <mat-cell *matCellDef="let persona"> {{persona.nombre}} </mat-cell>
-  </ng-container>
-  <ng-container matColumnDef="apellido" >
-    <mat-header-cell *matHeaderCellDef>Apellido</mat-header-cell>
-    <mat-cell *matCellDef="let persona"> {{persona.apellido}} </mat-cell>
+      <mat-header-cell *matHeaderCellDef>Alumno</mat-header-cell>
+      <mat-cell *matCellDef="let persona"> {{persona | nombreCompleto}} </mat-cell>
   </ng-container>
   <ng-container matColumnDef="edad">
       <mat-header-cell *matHeaderCellDef>Edad</mat-header-cell>
@@ -39,5 +35,5 @@
 </mat-table>
 <br>
 <div class="d-flex justify-content-left w-100">
-  <button mat-raised-button (click)="openDialog('Guardar',{})">Agregar Alumno</button>
+  <button mat-raised-button color="primary" (click)="openDialog('Guardar',{})">Agregar Alumno</button>
 </div>

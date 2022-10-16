@@ -11,7 +11,7 @@ import {ListaPersonas} from './personas'
 export class AbmTablaComponent implements OnInit {
   dataInicial = ListaPersonas
   ELEMENT_DATA = new MatTableDataSource()
-  displayedColumns: string[] = ['nombre','apellido','edad','telefono','email','edit','delete'];
+  displayedColumns: string[] = ['nombre','edad','telefono','email','edit','delete'];
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
@@ -23,8 +23,9 @@ export class AbmTablaComponent implements OnInit {
     // const elemento = this.dataInicial.find(persona => persona.id == id);
     //console.log(obj);
     const dialog = this.dialog.open(CrearPersonaDialogComponent, {
-      width: '50%',
-      height: '50%',
+      width: '45%',
+      height: '45%',
+      panelClass: 'custom-modalbox',
       data:obj,
     });
     dialog.afterClosed().subscribe(result => {

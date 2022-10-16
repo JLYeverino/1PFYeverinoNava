@@ -11,6 +11,9 @@
 .bd-toc-link.active {
     color: #fff !important;
 }
+.bd-toc-item a {
+    text-decoration: none !important;
+}
 @media (max-width: 768px) {
     #cont-links{
         display: block !important;
